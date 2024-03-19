@@ -29,6 +29,12 @@ Expected<PassPlugin> PassPlugin::Load(const std::string &Filename) {
   intptr_t getDetailsFn =
       (intptr_t)Library.getAddressOfSymbol("llvmGetPassPluginInfo");
 
+  // JuZeroKr
+  // Add Pass Plugin For Windows
+  if (!getDetailsFn)
+    getDetailsFn =
+        (intptr_t)Library.getAddressOfSymbol("llvmGetPassPluginInfoOnWindows");
+
   if (!getDetailsFn)
     // If the symbol isn't found, this is probably a legacy plugin, which is an
     // error

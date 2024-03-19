@@ -295,6 +295,10 @@
 #include "llvm/Transforms/Vectorize/LoopVectorize.h"
 #include "llvm/Transforms/Vectorize/SLPVectorizer.h"
 #include "llvm/Transforms/Vectorize/VectorCombine.h"
+
+// JuzeroKR
+#include "llvm/Transforms/PPProfiler/PPProfiler.h"
+
 #include <optional>
 
 using namespace llvm;

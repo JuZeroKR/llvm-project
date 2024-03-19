@@ -9,4 +9,8 @@ add_subdirectory(Hello)
 add_subdirectory(ObjCARC)
 add_subdirectory(Coroutines)
 add_subdirectory(CFGuard)
+<<<<<<< Updated upstream
 add_subdirectory(HipStdPar)
+=======
+add_subdirectory(PPProfiler)
+>>>>>>> Stashed changes

@@ -110,4 +110,6 @@ private:
 extern "C" ::llvm::PassPluginLibraryInfo LLVM_ATTRIBUTE_WEAK
 llvmGetPassPluginInfo();
 
+extern "C" __declspec(dllexport) ::llvm::PassPluginLibraryInfo
+    LLVM_ATTRIBUTE_WEAK llvmGetPassPluginInfoOnWindows();
 #endif /* LLVM_PASSES_PASSPLUGIN_H */
